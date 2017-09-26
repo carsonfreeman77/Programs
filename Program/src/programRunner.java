@@ -14,8 +14,8 @@ public class programRunner
 
 				for (int i = 0; i < TVShows.size(); i++)
 					{
-						System.out.println("Title: " + TVShows.get(i).getTitle() + " Genre: " + TVShows.get(i).getGenre()
-								+ " Number of seasons aired: " + TVShows.get(i).getNumberOfSeasonsAired());
+						System.out.println("Title: '" + TVShows.get(i).getTitle() + "', Genre: " + TVShows.get(i).getGenre()
+								+ ", Number of seasons aired: " + TVShows.get(i).getNumberOfSeasonsAired());
 
 					}
 				System.out.println();
@@ -25,17 +25,21 @@ public class programRunner
 				System.out.println();
 				for (int i = 0; i < TVShows.size() ; i++)
 					{
-						System.out.println("Title: " + TVShows.get(i).getTitle() + " Genre: " + TVShows.get(i).getGenre()
-								+ " Number of seasons aired: " + TVShows.get(i).getNumberOfSeasonsAired());
+						System.out.println("Title: '" + TVShows.get(i).getTitle() + "', Genre: " + TVShows.get(i).getGenre()
+								+ ", Number of seasons aired: " + TVShows.get(i).getNumberOfSeasonsAired());
 
 					}
-				TVShows.get(4);
-				for (int i = 0; i < TVShows.size(); i++)
-					{
-						System.out.println("Title: " + TVShows.get(i).getTitle() + "Genre: " + TVShows.get(i).getGenre()
-								+ "Number of seasons aired: " + TVShows.get(i).getNumberOfSeasonsAired());
+				System.out.println();
+				System.out.println("The Show: 'The New People' has changed to: 'The Very Very Old People'");
+				TVShows.get(0).setTitle("The Very Very Old People");;
+				System.out.println();
+				for (int i = 0; i < TVShows.size() ; i++)
+				{
+					System.out.println("Title: '" + TVShows.get(i).getTitle() + "', Genre: " + TVShows.get(i).getGenre()
+							+ ", Number of seasons aired: " + TVShows.get(i).getNumberOfSeasonsAired());
 
-					}
+				}
+					
 			}
 
 	}
